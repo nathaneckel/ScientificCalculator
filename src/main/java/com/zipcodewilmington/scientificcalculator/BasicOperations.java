@@ -25,17 +25,17 @@ public class BasicOperations {
 
     */
     // SIMPLE FUNCTIONS
-    public static double add(double userInput) {
-        return x + y;
+    public static double add(double userInput, double userInputTwo) {
+        return userInput + userInputTwo;
     }
-    public static double subtract(double userInput){
-        return x - y;
+    public static double subtract(double userInput, double userInputTwo) {
+        return userInput - userInputTwo;
     }
-    public static double multiply(double userInput){
-        return x * y;
+    public static double multiply(double userInput, double userInputTwo){
+        return userInput * userInputTwo;
     }
-    public static double divide(double userInput){
-        return x / y;
+    public static double divide(double userInput, double userInputTwo){
+        return userInput / userInputTwo;
     }
    /* SQUARE
 int i = 2;
@@ -60,6 +60,7 @@ int square = Math.pow(i, 2);
 
 
     //VARIABLE EXPONENTIATION (Xy)
+
     X in terms of Y -
     How do you declare an exponential in Java?
     It takes two arguments: the base and the exponent,
@@ -130,3 +131,4 @@ OR https://stackoverflow.com/questions/24786986/do-you-need-system-out-flush-bef
 
     }
 }
+
