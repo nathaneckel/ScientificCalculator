@@ -8,9 +8,9 @@ public class ScientificCalculations {
 //        return userInput;
 //    }
 
-    public static double add(double userInput, double userInputTwo) {
-        return userInput + userInputTwo;
-    }
+//    public static double add(double userInput, double userInputTwo) {
+//        return userInput + userInputTwo;
+//    }
     // Trigonometry Functions
 
     public static double sine(double userInput) {

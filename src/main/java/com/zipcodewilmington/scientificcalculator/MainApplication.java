@@ -34,10 +34,10 @@ public class MainApplication {
         switch (operator) {
 
             // add
-            case "+":
-                result = ScientificCalculations.add(userInput, userInputTwo);
-                System.out.println(result);
-                break;
+//            case "+":
+//                result = ScientificCalculations.add(userInput, userInputTwo);
+//                System.out.println(result);
+//                break;
 
             // sine
             case "sine":

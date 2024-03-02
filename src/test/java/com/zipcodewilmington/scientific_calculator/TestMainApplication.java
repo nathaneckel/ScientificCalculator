@@ -1,6 +1,8 @@
 package com.zipcodewilmington.scientific_calculator;
 import com.zipcodewilmington.scientificcalculator.BasicOperations;
+
 import com.zipcodewilmington.scientificcalculator.ScientificCalculations;
+>>>>>>> master
 import jdk.dynalink.Operation;
 import org.junit.Test;
 import org.junit.Assert;
@@ -18,17 +20,23 @@ public class TestMainApplication {
 
 //Arithmetic operators
         // (+) Test
+
         public void add() throws Exception {
+master
             Assert.assertEquals(4, BasicOperations.add(1, 3));
         }
 
         // (-) Test
+
         public void subtract() throws Exception {
+master
             Assert.assertEquals(6, BasicOperations.subtract(9, 3))
         }
 
         // (*) Test
+
         public void multiply() throws Exception {
+master
             Assert.assertEquals(12, BasicOperations.multiply(4, 3));
         }
 
@@ -38,12 +46,14 @@ public class TestMainApplication {
 //        }
 
         // (/) Test
+
         public void divide() throws Exception {
             Assert.assertEquals(3, BasicOperations.divide(9, 3));
         }
 
 
 // Trigonometry
+master
         // (Sin) Test
             public void sine() throws Exception {
             double delta = 0.0001;
