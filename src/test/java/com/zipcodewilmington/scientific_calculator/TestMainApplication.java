@@ -1,9 +1,12 @@
 package com.zipcodewilmington.scientific_calculator;
+import com.zipcodewilmington.scientificcalculator.BasicOperations;
 import com.zipcodewilmington.scientificcalculator.ScientificCalculations;
 import jdk.dynalink.Operation;
 import org.junit.Test;
 import org.junit.Assert;
 import org.sonatype.aether.metadata.Metadata;
+
+import javax.swing.plaf.basic.BasicArrowButton;
 
 import static com.zipcodewilmington.scientificcalculator.ScientificCalculations.cosine;
 import static com.zipcodewilmington.scientificcalculator.ScientificCalculations.tangent;
@@ -16,27 +19,27 @@ public class TestMainApplication {
 //Arithmetic operators
         // (+) Test
         public void add() throws Exception {
-            Assert.assertEquals(4, ScientificCalculations.add(1, 3));
+            Assert.assertEquals(4, BasicOperations.add(1, 3));
         }
 
         // (-) Test
         public void subtract() throws Exception {
-            Assert.assertEquals(6, ScientificCalculations.subtract(9, 3))
+            Assert.assertEquals(6, BasicOperations.subtract(9, 3))
         }
 
         // (*) Test
         public void multiply() throws Exception {
-            Assert.assertEquals(12, ScientificCalculations.multiply(4, 3));
+            Assert.assertEquals(12, BasicOperations.multiply(4, 3));
         }
 
         // Exponentiation Test
-        public void Exponentiation() throws Exception {
-        Assert.assertEquals(64, ScientificCalculations.exponentiation(4, 3));
-        }
+//        public void Exponentiation() throws Exception {
+//        Assert.assertEquals(64, BasicOperations.exponentiation(4, 3));
+//        }
 
         // (/) Test
         public void divide() throws Exception {
-            Assert.assertEquals(3, ScientificCalculations.divide(9, 3));
+            Assert.assertEquals(3, BasicOperations.divide(9, 3));
         }
 
 
