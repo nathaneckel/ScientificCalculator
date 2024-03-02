@@ -42,7 +42,7 @@ public class ScientificCalculations {
 
     // Logarithmic Functions
 
-    public static double log(double userInput) {
+    private static double log(double userInput) {
         return Math.log10(userInput);
     }
 
