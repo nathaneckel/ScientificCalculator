@@ -1,86 +1,50 @@
 package com.zipcodewilmington.scientific_calculator;
 import com.zipcodewilmington.scientificcalculator.BasicOperations;
-<<<<<<< HEAD
 import com.zipcodewilmington.scientificcalculator.ScientificCalculations;
-=======
-
-import com.zipcodewilmington.scientificcalculator.ScientificCalculations;
->>>>>>> master
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
-import jdk.dynalink.Operation;
 import org.junit.Test;
 import org.junit.Assert;
 import org.sonatype.aether.metadata.Metadata;
 import javax.swing.plaf.basic.BasicArrowButton;
-import static com.zipcodewilmington.scientificcalculator.ScientificCalculations.cosine;
-import static com.zipcodewilmington.scientificcalculator.ScientificCalculations.tangent;
+
 
 /**
  * Created by leon on 2/9/18.
  */
 public class TestMainApplication {
 
-//Arithmetic operators
+        //Arithmetic operators
         @Test
         // (+) Test
-
         public void add() throws Exception {
-<<<<<<< HEAD
-=======
-master
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
             Assert.assertEquals(4, BasicOperations.add(1, 3));
         }
-
         @Test
         // (-) Test
-<<<<<<< HEAD
         public void subtract() throws Exception {
-=======
-
-        public void subtract() throws Exception {
-master
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
             Assert.assertEquals(6, BasicOperations.subtract(9, 3))
         }
 
         @Test
         // (*) Test
-<<<<<<< HEAD
-            // public void testMultiply() throws Exception {
         public void multiply() throws Exception {
-=======
-
-        public void multiply() throws Exception {
-master
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
             Assert.assertEquals(12, BasicOperations.multiply(4, 3));
         }
 
         @Test
         // Exponentiation Test
-//        public void Exponentiation() throws Exception {
-//        Assert.assertEquals(64, BasicOperations.exponentiation(4, 3));
-//        }
+        // public void Exponentiation() throws Exception {
+        // Assert.assertEquals(64, BasicOperations.exponentiation(4, 3));
+        // }
 
         @Test
         // (/) Test
-<<<<<<< HEAD
-=======
-
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
         public void divide() throws Exception {
             Assert.assertEquals(3, BasicOperations.divide(9, 3));
         }
-
         @Test
-// Trigonometry
-<<<<<<< HEAD
-=======
-master
->>>>>>> 68777c654545be639d52910941c5b65b3905bf36
+        // Trigonometry
         // (Sin) Test
-public void sine() throws Exception {double delta = 0.0001;
+        public void sine() throws Exception {double delta = 0.0001;
             Assert.assertEquals(0.087155742748, ScientificCalculations.sine(5), delta);
         }
 
