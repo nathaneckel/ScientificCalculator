@@ -1,13 +1,16 @@
 package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 public class ScientificCalculations {
-    public static double getUserInput() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print(0);
-        double userInput = scanner.nextDouble();
-        return userInput;
-    }
+//    public static double getUserInput() {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print(0);
+//        double userInput = scanner.nextDouble();
+//        return userInput;
+//    }
 
+    public static double add(double userInput, double userInputTwo) {
+        return userInput + userInputTwo;
+    }
     // Trigonometry Functions
 
     public static double sine(double userInput) {
@@ -42,7 +45,7 @@ public class ScientificCalculations {
 
     // Logarithmic Functions
 
-    private static double log(double userInput) {
+    public static double log(double userInput) {
         return Math.log10(userInput);
     }
 
