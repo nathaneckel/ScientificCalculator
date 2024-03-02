@@ -1,4 +1,5 @@
 package com.zipcodewilmington.scientific_calculator;
+import com.zipcodewilmington.scientificcalculator.BasicOperations;
 import jdk.dynalink.Operation;
 import org.junit.Test;
 import org.junit.Assert;
@@ -10,20 +11,20 @@ public class TestMainApplication {
 
         // (+) Test
         public void testAdd() throws Exception {
-            Assert.assertEquals(4 TestMainApplication.add(1, 3));
+            Assert.assertEquals(4, BasicOperations.add(1, 3));
         }
 
         // (-) Test
         public void testSubtract() throws  Exception {
-            Assert.assertEquals(6, Operation.subtract(9, 3))
+            Assert.assertEquals(6, BasicOperations.subtract(9, 3))
         }
         // (*) Test
           public void testMultiply() throws Exception {
-            Assert.assertEquals(12, Operation.multiply(4, 3));
+            Assert.assertEquals(12, BasicOperations.multiply(4, 3));
         }
         // (/) Test
           public void testDivide() throws Exception {
-            Assert.assertEquals(3, Operation.divide(9, 3));
+            Assert.assertEquals(3, BasicOperations.divide(9, 3));
          }
         // (Sin) Test
         public void testSin() throws Exception {
