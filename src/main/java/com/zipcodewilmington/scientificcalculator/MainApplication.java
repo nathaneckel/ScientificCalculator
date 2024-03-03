@@ -12,45 +12,68 @@ public class MainApplication {
         boolean isOn = true;
         double userInput = 0;
         double userInputTwo = 0;
+        int userInputFactorial = 0;
         double result;
         String operator;
         String power;
 
 
-        System.out.println("Select a number to call an operation");
-        System.out.println("1. Add");
-        System.out.println("2. Subtract");
-        System.out.println("3. Multiply");
-        System.out.println("4. Divide");
-        System.out.println("5. Square");
-        System.out.println("6. Square Root");
-        System.out.println("7. Exponent");
-        System.out.println("8. Inverse");
-        System.out.println("9. Toggle to inverse(+/-)");
-        System.out.println("10. Sine");
-        System.out.println("11. Cosine");
-        System.out.println("12. Tangent");
-        System.out.println("13. Inverse Sine");
-        System.out.println("14. Inverse Cosine");
-        System.out.println("15. Inverse Tangent");
-        System.out.println("16. Logarithm");
-        System.out.println("17. Inverse Logarithm");
-        System.out.println("18. Natural Logarithm");
-        System.out.println("19. Inverse Natural Logarithm");
+        System.out.println(" \"\"\"\n" +
+                "    ___________________________________________________________\n" +
+                "   |  _______________________________________________________  |\n" +
+                "   | |                                                       | |\n" +
+                "   | |                                                       | |\n" +
+                "   | |_______________________________________________________| |\n" +
+                "   |                                                           |\n" +
+                "   |  [(-)] [(_) ] [ * ] [  /  ] [ ^ ] [ √ ] [sin] [cos]       |\n" +
+                "   |                                                           |\n" +
+                "   |  [tan] [log] [ln] [π ] [eX] [arcSin] [arcCos] [arcTan]    |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 7 ] [ 8 ] [ 9 ] [ ( ] [ ) ] [ x² ] [ x³ ] [EXP]        |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 4 ] [ 5 ] [ 6 ] [ + ] [ - ] [ × ] [ ÷ ] [MOD] [invLog] |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 1 ] [ 2 ] [ 3 ] [ 0 ] [ . ] [ = ] [AC]                 |\n" +
+                "   |___________________________________________________________|\n\nSelect a number to call an operation");
+//        System.out.println("1. Add");
+//        System.out.println("2. Subtract");
+//        System.out.println("3. Multiply");
+//        System.out.println("4. Divide");
+//        System.out.println("5. Square");
+//        System.out.println("6. Square Root");
+//        System.out.println("7. Exponent");
+//        System.out.println("8. Inverse");
+//        System.out.println("9. Toggle to inverse(+/-)");
+//        System.out.println("10. Sine");
+//        System.out.println("11. Cosine");
+//        System.out.println("12. Tangent");
+//        System.out.println("13. Inverse Sine");
+//        System.out.println("14. Inverse Cosine");
+//        System.out.println("15. Inverse Tangent");
+//        System.out.println("16. Logarithm");
+//        System.out.println("17. Inverse Logarithm");
+//        System.out.println("18. Natural Logarithm");
+//        System.out.println("19. Inverse Natural Logarithm");
 
         operator = scanner.nextLine();
-        System.out.print("Enter a number: ");
-        userInput = scanner.nextDouble();
-        if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4")) {
-            System.out.print("Enter another number: ");
-            userInputTwo = scanner.nextDouble();
+        if (operator.equals("20")) {
+            System.out.print("Enter a number: ");
+            userInputFactorial = scanner.nextInt();
+        }
+        else {
+            System.out.print("Enter a number: ");
+            userInput = scanner.nextDouble();
+            if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4") || operator.equals("8")) {
+                System.out.print("Enter another number: ");
+                userInputTwo = scanner.nextDouble();
+            }
         }
 //        System.out.println("Continue? Y/N");
 //        power = scanner.nextLine();
 //        if (power.equals("N")) {
 //            isOn = false;
 //        }
-
+//    do {
         switch (operator) {
 
             // add
@@ -74,6 +97,28 @@ public class MainApplication {
                 System.out.println(result);
                 break;
 
+            case "5":
+                result = BasicOperations.square(userInput);
+                System.out.println(result);
+                break;
+
+            case "6":
+                result = BasicOperations.square2(userInput);
+                System.out.println(result);
+                break;
+
+            case "7":
+                result = BasicOperations.squareRoot(userInput);
+                System.out.println(result);
+                break;
+
+            case "8":
+                result = BasicOperations.variableExponent(userInput, userInputTwo);
+                System.out.println(result);
+
+            case "9":
+                result = BasicOperations.inverseNumber(userInput);
+                System.out.println(result);
 
             case "10":
                 result = ScientificCalculations.sine(userInput);
@@ -124,8 +169,13 @@ public class MainApplication {
                 result = ScientificCalculations.eX(userInput);
                 System.out.print(result);
                 break;
+
+            case "20":
+                result = ScientificCalculations.factorial(userInputFactorial);
+                System.out.print(result);
+                break;
         }
-        }
+    }
     }
 
 
