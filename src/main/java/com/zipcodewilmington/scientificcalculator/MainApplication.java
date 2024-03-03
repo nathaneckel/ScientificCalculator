@@ -18,26 +18,42 @@ public class MainApplication {
         String power;
 
 
-        System.out.println("Select a number to call an operation");
-        System.out.println("1. Add");
-        System.out.println("2. Subtract");
-        System.out.println("3. Multiply");
-        System.out.println("4. Divide");
-        System.out.println("5. Square");
-        System.out.println("6. Square Root");
-        System.out.println("7. Exponent");
-        System.out.println("8. Inverse");
-        System.out.println("9. Toggle to inverse(+/-)");
-        System.out.println("10. Sine");
-        System.out.println("11. Cosine");
-        System.out.println("12. Tangent");
-        System.out.println("13. Inverse Sine");
-        System.out.println("14. Inverse Cosine");
-        System.out.println("15. Inverse Tangent");
-        System.out.println("16. Logarithm");
-        System.out.println("17. Inverse Logarithm");
-        System.out.println("18. Natural Logarithm");
-        System.out.println("19. Inverse Natural Logarithm");
+        System.out.println(" \"\"\"\n" +
+                "    ___________________________________________________________\n" +
+                "   |  _______________________________________________________  |\n" +
+                "   | |                                                       | |\n" +
+                "   | |                                                       | |\n" +
+                "   | |_______________________________________________________| |\n" +
+                "   |                                                           |\n" +
+                "   |  [(-)] [(_) ] [ * ] [  /  ] [ ^ ] [ √ ] [sin] [cos]       |\n" +
+                "   |                                                           |\n" +
+                "   |  [tan] [log] [ln] [π ] [eX] [arcSin] [arcCos] [arcTan]    |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 7 ] [ 8 ] [ 9 ] [ ( ] [ ) ] [ x² ] [ x³ ] [EXP]        |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 4 ] [ 5 ] [ 6 ] [ + ] [ - ] [ × ] [ ÷ ] [MOD] [invLog] |\n" +
+                "   |                                                           |\n" +
+                "   |  [ 1 ] [ 2 ] [ 3 ] [ 0 ] [ . ] [ = ] [AC]                 |\n" +
+                "   |___________________________________________________________|\n\nSelect a number to call an operation");
+//        System.out.println("1. Add");
+//        System.out.println("2. Subtract");
+//        System.out.println("3. Multiply");
+//        System.out.println("4. Divide");
+//        System.out.println("5. Square");
+//        System.out.println("6. Square Root");
+//        System.out.println("7. Exponent");
+//        System.out.println("8. Inverse");
+//        System.out.println("9. Toggle to inverse(+/-)");
+//        System.out.println("10. Sine");
+//        System.out.println("11. Cosine");
+//        System.out.println("12. Tangent");
+//        System.out.println("13. Inverse Sine");
+//        System.out.println("14. Inverse Cosine");
+//        System.out.println("15. Inverse Tangent");
+//        System.out.println("16. Logarithm");
+//        System.out.println("17. Inverse Logarithm");
+//        System.out.println("18. Natural Logarithm");
+//        System.out.println("19. Inverse Natural Logarithm");
 
         operator = scanner.nextLine();
         if (operator.equals("20")) {
