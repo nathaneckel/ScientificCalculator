@@ -21,10 +21,6 @@ public class BasicOperations {
     public static double square(double userInput){
         return userInput * userInput;
     }
-    //ALT FOR SQUARE
-    public static double square2(double userInput){
-        return Math.pow(userInput, 2);
-    }
 
     public static double squareRoot(double userInput){
         return Math.sqrt(userInput);

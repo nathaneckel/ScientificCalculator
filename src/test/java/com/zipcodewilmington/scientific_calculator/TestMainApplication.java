@@ -118,6 +118,47 @@ public class TestMainApplication {
          Assert.assertEquals(6, ScientificCalculations.factorial(3), 0.00001);
       }
 
+
+            @Test
+    //Square
+            //(square) Test
+            public void square() throws Exception {
+                double delta = 0.0001;
+                Assert.assertEquals(36.0, BasicOperations.square(6), delta);
+            }
+
+        @Test
+
+        //(squareRoot) Test
+        public void squareRoot() throws Exception {
+            double delta = 0.0001;
+            Assert.assertEquals(4.0, BasicOperations.squareRoot(16), delta);
+        }
+
+        @Test
+
+        //(variableExponent) Test
+        public void variableExponent() throws Exception {
+            double delta = 0.0001;
+            Assert.assertEquals(8.0, BasicOperations.variableExponent(2, 3), delta);
+        }
+
+        @Test
+
+        //(inverseNumber) Test
+        public void inverseNumber() throws Exception {
+            double delta = 0.0001;
+            Assert.assertEquals(0.50, BasicOperations.inverseNumber(2), delta);
+        }
+
+    @Test
+
+    //(modulo) Test
+    public void modulo() throws Exception {
+        double delta = 0.0001;
+        Assert.assertEquals(2.0, BasicOperations.modulo(2, 4), delta);
+    }
+
 }
 
 

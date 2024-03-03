@@ -102,10 +102,7 @@ public class MainApplication {
                 System.out.println(result);
                 break;
 
-            case "^":
-                result = BasicOperations.square2(userInput);
-                System.out.println(result);
-                break;
+
 
             case "√":
                 result = BasicOperations.squareRoot(userInput);
