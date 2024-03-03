@@ -12,6 +12,7 @@ public class MainApplication {
         boolean isOn = true;
         double userInput = 0;
         double userInputTwo = 0;
+        int userInputFactorial = 0;
         double result;
         String operator;
         String power;
@@ -39,6 +40,9 @@ public class MainApplication {
         System.out.println("19. Inverse Natural Logarithm");
 
         operator = scanner.nextLine();
+        if (operator.equals("20")) {
+            userInputFactorial = scanner.nextInt();
+        }
         System.out.print("Enter a number: ");
         userInput = scanner.nextDouble();
         if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4")) {
@@ -50,7 +54,7 @@ public class MainApplication {
 //        if (power.equals("N")) {
 //            isOn = false;
 //        }
-
+//    do {
         switch (operator) {
 
             // add
@@ -74,6 +78,28 @@ public class MainApplication {
                 System.out.println(result);
                 break;
 
+            case "5":
+                result = BasicOperations.square(userInput);
+                System.out.println(result);
+                break;
+
+            case "6":
+                result = BasicOperations.square2(userInput);
+                System.out.println(result);
+                break;
+
+            case "7":
+                result = BasicOperations.squareRoot(userInput);
+                System.out.println(result);
+                break;
+
+            case "8":
+                result = BasicOperations.variableExponent(userInput, userInputTwo);
+                System.out.println(result);
+
+            case "9":
+                result = BasicOperations.inverseNumber(userInput);
+                System.out.println(result);
 
             case "10":
                 result = ScientificCalculations.sine(userInput);
@@ -124,8 +150,13 @@ public class MainApplication {
                 result = ScientificCalculations.eX(userInput);
                 System.out.print(result);
                 break;
+
+            case "20":
+                result = ScientificCalculations.factorial(userInputFactorial);
+                System.out.print(result);
+                break;
         }
-        }
+    }
     }
 
 
