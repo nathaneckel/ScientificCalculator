@@ -46,42 +46,19 @@ public class BasicOperations {
     }
     //ALT FOR SQUARE
     public static double square2(double userInput){
-        return int square2 = Math.pow(userInput, 2);
-        return Math.pow(userInput. 2);
+        double square2 = Math.pow(userInput, 2);
+        return square2;
     }
     //original square codeblock
     // int i = 2;
     //int square = Math.pow(i, 2);
 
 
-
-
     //SQUARE ROOT BELOW - COME BACK TO THIS
-    //SQUARE ROOT - COME BACK TO THIS
-    //SQUARE ROOT - COME BACK TO THIS
-    //SQUARE ROOT - COME BACK TO THIS
 
-    import java.lang.Math;
-    public static void double sqrt(double userInput){
-        return sqrt;
+    public double sqrt(double userInput){
+        return Math.sqrt(userInput);
         }
-/*    class Gfg {
-
-        public static void main(String args[])
-        {
-            double a = 30;
-            System.out.println(Math.sqrt(a));
-            a = 45;}
-
-        // ORIGINAL BLOCK java.lang.Math.sqrt()
-//            class Gfg {
-//                // driver code
-//                public static void main(String args[])
-//                {
-//                    double a = 30;
-//                    System.out.println(Math.sqrt(a));
-//                    a = 45;
-
 
 
 //    //VARIABLE EXPONENTIATION (Xy)
@@ -94,8 +71,9 @@ public class BasicOperations {
 //
 //    For instance, Math. pow(2, 3) raises 2 to the power of 3.
 */
-    public static double variableexponent; Math.pow(double userInput, double userInputTwo){
-    return variableexponent;
+    public double variableExponent(double userInput, double userInputTwo){
+         return Math.pow(userInput, userInputTwo);
+        }
 
 
     //INVERSION / INVERSE OF DISPLAY NUMBER
