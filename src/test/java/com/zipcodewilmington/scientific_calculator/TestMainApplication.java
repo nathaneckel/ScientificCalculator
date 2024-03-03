@@ -16,21 +16,21 @@ public class TestMainApplication {
         @Test
         // (+) Test
         public void add() throws Exception {
-            Assert.assertEquals(4, BasicOperations.add(1, 3));
+            Assert.assertEquals(4, BasicOperations.add(1, 3), 0.00001);
         }
         @Test
         // (-) Test
         public void subtract() throws Exception {
-            Assert.assertEquals(6, BasicOperations.subtract(9, 3))
+            Assert.assertEquals(6.0, BasicOperations.subtract(9.0, 3.0), 0.000001);
         }
 
         @Test
         // (*) Test
         public void multiply() throws Exception {
-            Assert.assertEquals(12, BasicOperations.multiply(4, 3));
+            Assert.assertEquals(12, BasicOperations.multiply(4, 3), 0.00001);
         }
 
-        @Test
+//        @Test
         // Exponentiation Test
         // public void Exponentiation() throws Exception {
         // Assert.assertEquals(64, BasicOperations.exponentiation(4, 3));
@@ -39,7 +39,7 @@ public class TestMainApplication {
         @Test
         // (/) Test
         public void divide() throws Exception {
-            Assert.assertEquals(3, BasicOperations.divide(9, 3));
+            Assert.assertEquals(3.0, BasicOperations.divide(9.0, 3.0), 0.00001);
         }
         @Test
         // Trigonometry
@@ -88,14 +88,14 @@ public class TestMainApplication {
         //(Log) Test
         public void Log() throws Exception {
             double delta = 0.0001;
-            Assert.assertEquals(1.07918125, ScientificCalculations.log(15), delta);
+            Assert.assertEquals(0.77815125038, ScientificCalculations.log(6), delta);
          }
 
         @Test
         // (Inverse Log) Test
         public void inverseLog() throws Exception {
         double delta = 0.0001;
-        Assert.assertEquals(1.07918125, ScientificCalculations.inverseLog(12), delta);
+        Assert.assertEquals(1000, ScientificCalculations.inverseLog(3), delta);
         }
 
         @Test
@@ -109,13 +109,13 @@ public class TestMainApplication {
         // (E^X) Test
         public void eX() throws Exception {
         double delta = 0.0001;
-        Assert.assertEquals(7.3890560989, ScientificCalculations.eX(12), delta);
+        Assert.assertEquals(20.08553664464, ScientificCalculations.eX(3), delta);
         }
 
         @Test
         // (Factorial) Test
          public void factorial() throws Exception {
-         Assert.assertEquals(120, ScientificCalculations.log(5));
+         Assert.assertEquals(6, ScientificCalculations.factorial(3), 0.00001);
       }
 
 }

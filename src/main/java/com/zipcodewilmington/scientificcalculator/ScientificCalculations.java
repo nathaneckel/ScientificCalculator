@@ -29,17 +29,18 @@ public class ScientificCalculations {
     }
 
     public static double inverseSine(double userInput) {
-        userInput = Math.toRadians(userInput);
+
+        //        userInput = Math.toRadians(userInput);
         return Math.asin(userInput);
     }
 
     public static double inverseCosine(double userInput) {
-        userInput = Math.toRadians(userInput);
+//        userInput = Math.toRadians(userInput);
         return Math.acos(userInput);
     }
 
     public static double inverseTangent(double userInput) {
-        userInput = Math.toRadians(userInput);
+//        userInput = Math.toRadians(userInput);
         return Math.atan(userInput);
     }
 
@@ -66,8 +67,8 @@ public class ScientificCalculations {
     public static int factorial(int userInput) {
         int result = 1;
 
-        for (int i = 2; i <= userInput; i++) {
-            result *= i;
+        for (int i = 1; i <= userInput; i++) {
+            result = result * i;
         }
         return result;
     }
