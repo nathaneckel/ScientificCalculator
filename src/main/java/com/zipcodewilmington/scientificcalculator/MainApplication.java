@@ -7,99 +7,125 @@ import java.util.Scanner;
  */
 public class MainApplication {
     public static void main(String[] args) {
-//        Console.println("Welcome to my calculator!");
-//        String s = Console.getStringInput("Enter a string");
-//        Integer i = Console.getIntegerInput("Enter an integer");
-//        Double d = Console.getDoubleInput("Enter a double.");
-//
-//        Console.println("The user input %s as a string", s);
-//        Console.println("The user input %s as a integer", i);
-//        Console.println("The user input %s as a d", d);
-
-        double userInput = 0;
-        double userInputTwo = 0;
-        String operator;
 
         Scanner scanner = new Scanner(System.in);
+        boolean isOn = true;
+        double userInput = 0;
+        double userInputTwo = 0;
+        double result;
+        String operator;
+        String power;
+
+
+        System.out.println("Select a number to call an operation");
+        System.out.println("1. Add");
+        System.out.println("2. Subtract");
+        System.out.println("3. Multiply");
+        System.out.println("4. Divide");
+        System.out.println("5. Square");
+        System.out.println("6. Square Root");
+        System.out.println("7. Exponent");
+        System.out.println("8. Inverse");
+        System.out.println("9. Toggle to inverse(+/-)");
+        System.out.println("10. Sine");
+        System.out.println("11. Cosine");
+        System.out.println("12. Tangent");
+        System.out.println("13. Inverse Sine");
+        System.out.println("14. Inverse Cosine");
+        System.out.println("15. Inverse Tangent");
+        System.out.println("16. Logarithm");
+        System.out.println("17. Inverse Logarithm");
+        System.out.println("18. Natural Logarithm");
+        System.out.println("19. Inverse Natural Logarithm");
+
+        operator = scanner.nextLine();
         System.out.print("Enter a number: ");
         userInput = scanner.nextDouble();
-        System.out.print("Enter an operator: ");
-        operator = scanner.next();
-        if (operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals("/")) {
+        if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4")) {
             System.out.print("Enter another number: ");
             userInputTwo = scanner.nextDouble();
         }
+//        System.out.println("Continue? Y/N");
+//        power = scanner.nextLine();
+//        if (power.equals("N")) {
+//            isOn = false;
+//        }
 
-        double result;
         switch (operator) {
 
             // add
-//            case "+":
-//                result = ScientificCalculations.add(userInput, userInputTwo);
-//                System.out.println(result);
-//                break;
+            case "1":
+                result = BasicOperations.add(userInput, userInputTwo);
+                System.out.println(result);
+                break;
 
-            // sine
-            case "sine":
+            case "2":
+                result = BasicOperations.subtract(userInput, userInputTwo);
+                System.out.println(result);
+                break;
+
+            case "3":
+                result = BasicOperations.multiply(userInput, userInputTwo);
+                System.out.println(result);
+                break;
+
+            case "4":
+                result = BasicOperations.divide(userInput, userInputTwo);
+                System.out.println(result);
+                break;
+
+
+            case "10":
                 result = ScientificCalculations.sine(userInput);
                 System.out.println(result);
                 break;
 
-            case "cosine":
+            case "11":
                 result = ScientificCalculations.cosine(userInput);
                 System.out.println(result);
                 break;
 
-            case "tangent":
+            case "12":
                 result = ScientificCalculations.sine(userInput);
                 System.out.println(result);
                 break;
 
-            case "inverseSine":
+            case "13":
                 result = ScientificCalculations.inverseSine(userInput);
                 System.out.println(result);
                 break;
 
-            case "inverseCosine":
+            case "14":
                 result = ScientificCalculations.inverseCosine(userInput);
                 System.out.println(result);
                 break;
 
-            case "inverseTangent":
+            case "15":
                 result = ScientificCalculations.inverseTangent(userInput);
                 System.out.println(result);
                 break;
 
-            case "log":
+            case "16":
                 result = ScientificCalculations.log(userInput);
                 System.out.print(result);
                 break;
 
-            case "inverseLog":
+            case "17":
                 result = ScientificCalculations.inverseLog(userInput);
                 System.out.print(result);
                 break;
 
-            case "naturalLog":
+            case "18":
                 result = ScientificCalculations.naturalLog(userInput);
                 System.out.print(result);
                 break;
 
-            case "eX":
+            case "19":
                 result = ScientificCalculations.eX(userInput);
                 System.out.print(result);
                 break;
-
         }
-        scanner.close();
+        }
     }
-}
-
-//    public static double getUserInput() {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print(0);
-//        double userInput = scanner.nextDouble();
-//        return userInput;
-//    }
 
 
