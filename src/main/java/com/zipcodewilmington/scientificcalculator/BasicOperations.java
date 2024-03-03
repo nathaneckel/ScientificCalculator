@@ -2,6 +2,11 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class BasicOperations {
 
+//SIMPLE CODE TEMPLATE TO CUSTOMIZE
+//public static double divide(double userInput, double userInputTwo){
+//    return userInput / userInputTwo;
+
+
     //Nick's example that I'm customizing - TY Nick!
 
     //HERE's WHAT [UPDATE: NICK & I] NEED TO DO:
@@ -13,13 +18,9 @@ public class BasicOperations {
      ADD SUBTRACT MULTIPLY AND DIVIDE THE DISPLAY VALUE BY A GIVEN NUMBER
 
     I NEED TO DO THIS
-    - SIMPLE FUNCTIONS~~
-    - SQUARE / SQUARE ROOT OF DISPLAY NUMBER
-    - VARIABLE EXPONENTIATION (Xy)
-    - INVERSE OF DISPLAY NUMBER (1/X)
-    5 INVERT THE SIGN OF NUMBER (TOGGLE +/-)
-    6 DISPLAY "ERROR" WHEN ERROR
-    7 CLEAR THE ERROR BEFORE YOU CAN DO ANYTHING ELSE
+    - SIMPLE FUNCTIONS || SQUARE / SQ ROOT OF DISPLAY NUM || VAR EXPONENTIATION (Xy)
+    - INVERSE OF DISPLAY NUMBER (1/X) || INVERT THE SIGN OF NUMBER (TOGGLE +/-)
+    - DISPLAY "ERROR" WHEN ERROR || CLEAR THE ERROR BEFORE YOU CAN DO ANYTHING ELSE
 
     NATHAN CUSTOMIZE NICK'S CODE BELOW AND FIGURE THE CONTEXT WHERE IT FITS IN
 
@@ -37,37 +38,65 @@ public class BasicOperations {
     public static double divide(double userInput, double userInputTwo){
         return userInput / userInputTwo;
     }
-   /* SQUARE
-int i = 2;
-int square = Math.pow(i, 2);
 
-    //SQUARE ROOT
-    // Java program to demonstrate working
-// of java.lang.Math.sqrt() method
 
-    /*import java.lang.Math;
+    //SQUARE
+    public static double square(double userInput){
+        return userInput * userInput;
+    }
+    //ALT FOR SQUARE
+    public static double square2(double userInput){
+        return int square2 = Math.pow(userInput, 2);
+        return Math.pow(userInput. 2);
+    }
+    //original square codeblock
+    // int i = 2;
+    //int square = Math.pow(i, 2);
 
-    class Gfg {
 
-        // driver code
+
+
+    //SQUARE ROOT BELOW - COME BACK TO THIS
+    //SQUARE ROOT - COME BACK TO THIS
+    //SQUARE ROOT - COME BACK TO THIS
+    //SQUARE ROOT - COME BACK TO THIS
+
+    import java.lang.Math;
+    public static void double sqrt(double userInput){
+        return sqrt;
+        }
+/*    class Gfg {
+
         public static void main(String args[])
         {
             double a = 30;
-
             System.out.println(Math.sqrt(a));
+            a = 45;}
 
-            a = 45;
+        // ORIGINAL BLOCK java.lang.Math.sqrt()
+//            class Gfg {
+//                // driver code
+//                public static void main(String args[])
+//                {
+//                    double a = 30;
+//                    System.out.println(Math.sqrt(a));
+//                    a = 45;
 
 
-    //VARIABLE EXPONENTIATION (Xy)
 
-    X in terms of Y -
-    How do you declare an exponential in Java?
-    It takes two arguments: the base and the exponent,
-    and returns the result as a double, with the syntax double result
-    = Math. pow(base, exponent); .
+//    //VARIABLE EXPONENTIATION (Xy)
+//
+//    X in terms of Y -
+//    How do you declare an exponential in Java?
+//    It takes two arguments: the base and the exponent,
+//    and returns the result as a double, with the syntax double result
+//    = Math. pow(base, exponent); .
+//
+//    For instance, Math. pow(2, 3) raises 2 to the power of 3.
+*/
+    public static double variableexponent; Math.pow(double userInput, double userInputTwo){
+    return variableexponent;
 
-    For instance, Math. pow(2, 3) raises 2 to the power of 3.
 
     //INVERSION / INVERSE OF DISPLAY NUMBER
     /*How do you find the inverse of a number in Java?
@@ -107,8 +136,15 @@ class Main {
 INVERSE THE SIGN OF A NUMBER
 #toggle?  if/else? if + is false, then - ; if - is false then +
 
+
+
+//SIMPLE CODE TEMPLATE TO CUSTOMIZE
+ public static double divide(double userInput, double userInputTwo){
+        return userInput / userInputTwo;
+    }
+
 How to change the sign of a number in js?
-sign() method retuns whether a number is negative, positive or zero.
+sign() method returns whether a number is negative, positive or zero.
 If the number is positive, this method returns 1.
 If the number is negative, it returns -1.
 If the number is zero, it returns 0.
@@ -116,14 +152,16 @@ If the number is zero, it returns 0.
 DISPLAY ERROR
 How to print out an error in Java?
 Different ways to print exception messages in Java
-Using printStackTrace() method − It print the name of the exception, description and complete stack trace including the line where exception occurred. ...
+Using printStackTrace() method − It print the name of the exception, description
+and complete stack trace including the line where exception occurred. ...
 Using toString() method − It prints the name and description of the exception. ...
 Using getMessage() method − Mostly used.
 
 CLEAR ERROR BEFORE I CAN DO ANYTHING
 How to clear printed text in Java?
 To clear a line of output from a Java program's screen, you can use the following methods:
-Use System.out.print("\r") to move the cursor back to the beginning of the line, then use System.out.print(" ") to print a space character in each position on the line. ...
+Use System.out.print("\r") to move the cursor back to the beginning of the line,
+then use System.out.print(" ") to print a space character in each position on the line. ...
 Use System.out.print("\033[2K") to clear the line.
 
 OR https://stackoverflow.com/questions/24786986/do-you-need-system-out-flush-before-system-error-print
@@ -131,4 +169,3 @@ OR https://stackoverflow.com/questions/24786986/do-you-need-system-out-flush-bef
 
     }
 }
-
