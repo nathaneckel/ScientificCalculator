@@ -37,4 +37,9 @@ public class BasicOperations {
     public static double inverseNumber(double userInput) {
         return 1/userInput;
     }
+
+    public static double modulo(double userInput, double userInputTwo) {
+        return userInput % userInputTwo;
+
+    }
 }

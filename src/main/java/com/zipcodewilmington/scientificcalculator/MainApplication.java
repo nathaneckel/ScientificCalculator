@@ -25,11 +25,11 @@ public class MainApplication {
                 "   | |                                                       | |\n" +
                 "   | |_______________________________________________________| |\n" +
                 "   |                                                           |\n" +
-                "   |  [(-)] [(_) ] [ * ] [  /  ] [ ^ ] [ √ ] [sin] [cos]       |\n" +
+                "   |  [(-)] [(_) ] [ * ] [  /  ] [ ^ ] [ √ ] [sin] [cos] [1/x] |\n" +
                 "   |                                                           |\n" +
                 "   |  [tan] [log] [ln] [π ] [eX] [arcSin] [arcCos] [arcTan]    |\n" +
                 "   |                                                           |\n" +
-                "   |  [ 7 ] [ 8 ] [ 9 ] [ ( ] [ ) ] [ x² ] [ x³ ] [EXP]        |\n" +
+                "   |  [ 7 ] [ 8 ] [ 9 ] [ ( ] [ ) ] [ x² ] [ x³ ] [EXP] [Fact] |\n" +
                 "   |                                                           |\n" +
                 "   |  [ 4 ] [ 5 ] [ 6 ] [ + ] [ - ] [ × ] [ ÷ ] [MOD] [invLog] |\n" +
                 "   |                                                           |\n" +
@@ -56,14 +56,14 @@ public class MainApplication {
 //        System.out.println("19. Inverse Natural Logarithm");
 
         operator = scanner.nextLine();
-        if (operator.equals("20")) {
+        if (operator.equals("Fact")) {
             System.out.print("Enter a number: ");
             userInputFactorial = scanner.nextInt();
         }
         else {
             System.out.print("Enter a number: ");
             userInput = scanner.nextDouble();
-            if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4") || operator.equals("8")) {
+            if (operator.equals("+") || operator.equals("-") || operator.equals("x") || operator.equals("÷") || operator.equals("EXP")) {
                 System.out.print("Enter another number: ");
                 userInputTwo = scanner.nextDouble();
             }
@@ -77,100 +77,100 @@ public class MainApplication {
         switch (operator) {
 
             // add
-            case "1":
+            case "+":
                 result = BasicOperations.add(userInput, userInputTwo);
                 System.out.println(result);
                 break;
 
-            case "2":
+            case "-":
                 result = BasicOperations.subtract(userInput, userInputTwo);
                 System.out.println(result);
                 break;
 
-            case "3":
+            case "x":
                 result = BasicOperations.multiply(userInput, userInputTwo);
                 System.out.println(result);
                 break;
 
-            case "4":
+            case "÷":
                 result = BasicOperations.divide(userInput, userInputTwo);
                 System.out.println(result);
                 break;
 
-            case "5":
+            case "x²":
                 result = BasicOperations.square(userInput);
                 System.out.println(result);
                 break;
 
-            case "6":
+            case "^":
                 result = BasicOperations.square2(userInput);
                 System.out.println(result);
                 break;
 
-            case "7":
+            case "√":
                 result = BasicOperations.squareRoot(userInput);
                 System.out.println(result);
                 break;
 
-            case "8":
+            case "EXP":
                 result = BasicOperations.variableExponent(userInput, userInputTwo);
                 System.out.println(result);
 
-            case "9":
+            case "1/x":
                 result = BasicOperations.inverseNumber(userInput);
                 System.out.println(result);
 
-            case "10":
+            case "sin":
                 result = ScientificCalculations.sine(userInput);
                 System.out.println(result);
                 break;
 
-            case "11":
+            case "cos":
                 result = ScientificCalculations.cosine(userInput);
                 System.out.println(result);
                 break;
 
-            case "12":
-                result = ScientificCalculations.sine(userInput);
+            case "tan":
+                result = ScientificCalculations.tangent(userInput);
                 System.out.println(result);
                 break;
 
-            case "13":
+            case "arcSin":
                 result = ScientificCalculations.inverseSine(userInput);
                 System.out.println(result);
                 break;
 
-            case "14":
+            case "arcCos":
                 result = ScientificCalculations.inverseCosine(userInput);
                 System.out.println(result);
                 break;
 
-            case "15":
+            case "arcTan":
                 result = ScientificCalculations.inverseTangent(userInput);
                 System.out.println(result);
                 break;
 
-            case "16":
+            case "log":
                 result = ScientificCalculations.log(userInput);
                 System.out.print(result);
                 break;
 
-            case "17":
+            case "invLog":
                 result = ScientificCalculations.inverseLog(userInput);
                 System.out.print(result);
                 break;
 
-            case "18":
+            case "ln":
                 result = ScientificCalculations.naturalLog(userInput);
                 System.out.print(result);
                 break;
 
-            case "19":
+            case "eX":
                 result = ScientificCalculations.eX(userInput);
                 System.out.print(result);
                 break;
 
-            case "20":
+            case "Fact":
                 result = ScientificCalculations.factorial(userInputFactorial);
                 System.out.print(result);
                 break;
