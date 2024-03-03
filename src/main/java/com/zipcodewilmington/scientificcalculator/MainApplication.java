@@ -41,13 +41,16 @@ public class MainApplication {
 
         operator = scanner.nextLine();
         if (operator.equals("20")) {
+            System.out.print("Enter a number: ");
             userInputFactorial = scanner.nextInt();
         }
-        System.out.print("Enter a number: ");
-        userInput = scanner.nextDouble();
-        if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4")) {
-            System.out.print("Enter another number: ");
-            userInputTwo = scanner.nextDouble();
+        else {
+            System.out.print("Enter a number: ");
+            userInput = scanner.nextDouble();
+            if (operator.equals("1") || operator.equals("2") || operator.equals("3") || operator.equals("4") || operator.equals("8")) {
+                System.out.print("Enter another number: ");
+                userInputTwo = scanner.nextDouble();
+            }
         }
 //        System.out.println("Continue? Y/N");
 //        power = scanner.nextLine();
