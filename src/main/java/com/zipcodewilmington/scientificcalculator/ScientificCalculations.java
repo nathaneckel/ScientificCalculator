@@ -12,7 +12,7 @@ public class ScientificCalculations {
 //        return userInput + userInputTwo;
 //    }
     // Trigonometry Functions
-
+//s
     public static double sine(double userInput) {
         userInput = Math.toRadians(userInput);
         return Math.sin(userInput);
